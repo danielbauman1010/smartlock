@@ -50,30 +50,75 @@
 
 
 <template name = "product">
-  <div class="container">
+  <div class="container special_container ">
     <div class="page-header">
-      <h1>A 21th century locker <small>By Newton South's greatest engineers</small></h1>
+      <h1>A 21th century locker <small>By Newton South's greatest engineers...</small></h1>
+    </div>
+    <div class="jumbotron">
+      <h1>The Idea</h1>
+      <p>
+        We live in the 21th century, a time where all around us technology grows and merges with our
+        every day life activities. We thinks it's time to bring this change, to your beloved every-day
+        locker.
+      </p>
+      <p><a class="btn btn-primary btn-lg" href="{{pathFor route='purchase'}}" role="button">Buy</a></p>
+      <p class='pull-right' style='font-color: grey;'>not convinced yet? there's more!</p>
+    </div>
+    <div class="jumbotron">
+      <h1>NFC is THE FUTURE</h1>
+      <p>
+        NFC is a technology that allows passwords to be passed through touch! whether it's
+        the touch of an NFC card(that looks like a credit card but smarter), an NFC chip(could
+        be as small as a key-holder), or even your smartphone! Open your locker with just a
+        single touch!
+      </p>
+      <p><a class="btn btn-primary btn-lg" href="{{pathFor route='purchase'}}" role="button">Buy</a></p>
+      <p class='pull-right' style='font-color: grey;'>not convinced yet? there's more!</p>
+    </div>
+    <p style="font-size: 40px;">.</p>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        We've even added a nice light inside and a retro-switch to turn it on-off :)
+      </div>
+    </div>
+    <p style="font-size: 40px;">.</p>
+    <h3>*only illustration*</h3>
+    <div class="media">
+      <div class="media-left">
+        <a href="{{pathFor route='purchase'}}">
+          <img class="media-object" src="http://i65.tinypic.com/o77w3b.png" alt="not the actual product">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">not the actual product</h4>
+      </div>
     </div>
   </div>
 </template>
 
 
 <template name = 'specs'>
-  <div class="container">
-    <p>specs</p>
+  <div class="container special_container special_container special_container">
+    <div class="page-header">
+      <h1>Let's talk about numbers! <small>some people just care about hardware...</small></h1>
+    </div>
   </div>
 </template>
 
 
 <template name = 'purchase'>
-  <div class="container">
-    <p>purchase</p>
+  <div class="container special_container">
+    <div class="page-header">
+      <h1>The dream can turn into a reality<small> with a reasonable price...</small></h1>
+    </div>
   </div>
 </template>
 
 
 <template name = 'about'>
-  <div class="container">
-    <p>about</p>
+  <div class="container special_container">
+    <div class="page-header">
+      <h1>Who did this?! <small>so this was a mortal creation?!...</small></h1>
+    </div>
   </div>
 </template>
