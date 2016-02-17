@@ -1,6 +1,6 @@
 <head>
-  <title>smartlock</title>
-
+  <title>smartlocker</title>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" /> 
 </head>
 
 <body>
@@ -9,23 +9,69 @@
 
 
 <template name = 'navbars'>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{pathFor route='product'}}">SmartLocker</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="{{pathFor route='product'}}" data-toggle="collapse" data-target=".navbar-collapse.in">
+              product
+            </a>
+          </li>
+          <li>
+            <a href="{{pathFor route='specs'}}" data-toggle="collapse" data-target=".navbar-collapse.in">
+              specs
+            </a>
+          </li>
+          <li>
+            <a href="{{pathFor route='purchase'}}" data-toggle="collapse" data-target=".navbar-collapse.in">
+              purchase
+            </a>
+          </li>
+          <li>
+            <a href="{{pathFor route='about'}}" data-toggle="collapse" data-target=".navbar-collapse.in">
+              about
+            </a>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
 
 </template>
 
 
 <template name = "product">
-
+  <div class="container">
+    <p>product</p>
+  </div>
 </template>
 
 
 <template name = 'specs'>
-
+  <div class="container">
+    <p>specs</p>
+  </div>
 </template>
 
 
 <template name = 'purchase'>
+  <div class="container">
+    <p>purchase</p>
+  </div>
+</template>
 
 
 <template name = 'about'>
-
+  <div class="container">
+    <p>about</p>
+  </div>
 </template>
