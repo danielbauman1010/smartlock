@@ -1,6 +1,5 @@
 if (Meteor.isClient) {
-
-
+  
 }
 
 if (Meteor.isServer) {
@@ -15,4 +14,12 @@ Router.route('/', {
 Router.route('/specs', {
   name:   'specs',
   template:   'specs'
+});
+Router.route('/purchase', {
+  name:   'purchase',
+  template:   'purchase'
+});
+Router.route('/about', {
+  name:   'about',
+  template:   'about'
 });
